@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  height: 10rem;
+  background-color: var(--pink);
+  margin-bottom: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    height: 15rem;
+  }
+
+  > div {
+    font-weight: 500;
+    padding: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    h1 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 1.875rem;
+        letter-spacing: 0.1em;
+        line-height: 1.75rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      > svg {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        &:first-of-type {
+          color: #ffd60b;
+        }
+      }
+
+      > svg:last-of-type {
+        color: #111827;
+      }
+
+      @media only screen and (min-width: 768px) {
+        text-align: right;
+        font-size: 1.5rem;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+
+  > svg {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+      height: 100%;
+    }
+  }
+}

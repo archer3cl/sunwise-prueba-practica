@@ -1,0 +1,55 @@
+.spotify-container {
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+    > p {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--gray);
+    }
+
+    > span {
+      background: var(--gray);
+      flex: 1;
+      height: 0.125rem;
+      display: block;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    > div {
+      font-size: 1.125rem;
+
+      > svg {
+        color: var(--purple);
+
+        &:first-of-type {
+          margin-right: 0.75rem;
+        }
+      }
+    }
+  }
+
+  &__loader {
+    display: flex;
+    height: 15rem;
+    font-size: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-purple);
+  }
+
+  &__row {
+    display: flex;
+    overflow-x: scroll;
+    max-height: 20rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

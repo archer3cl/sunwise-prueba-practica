@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  --purple: #564fd8;
+  --light-purple: #7974dd;
+  --pink: #ffb5a7;
+  --white: #f9fafb;
+  --gray: #d1d5db;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-left: 5rem;
+
+  @media only screen and (min-width: 1024px) {
+    margin-left: 12.5rem;
+
+    > div:first-of-type {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+.spotify-lists {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  @media only screen and (min-width: 1024px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
