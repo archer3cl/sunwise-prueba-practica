@@ -25,6 +25,7 @@
 
       > svg {
         color: var(--purple);
+        cursor: pointer;
 
         &:first-of-type {
           margin-right: 0.75rem;
@@ -47,6 +48,7 @@
     display: flex;
     overflow-x: scroll;
     max-height: 20rem;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
       display: none;
