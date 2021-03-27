@@ -51,6 +51,9 @@ ul {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin-left: 5rem;
 
   @media only screen and (min-width: 1024px) {
@@ -64,6 +67,7 @@ main {
 }
 
 .spotify-lists {
+  flex-grow: 1;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 

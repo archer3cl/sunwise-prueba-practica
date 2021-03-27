@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import SpotifyContainer from './components/Spotify/SpotifyContainer';
 import Header from './components/common/Header/Header';
 import Sidebar from './components/common/Sidebar/Sidebar';
+import Player from './components/common/Player/Player';
 
 function App() {
   const [newReleases, setNewReleases] = useState([]);
@@ -30,6 +31,7 @@ function App() {
           <SpotifyContainer title="FEATURED PLAYLISTS" data={featuredPlaylists} />
           <SpotifyContainer title="BROWSE" data={categories} imagesKey="icons" />
         </div>
+        <Player />
       </main>
     </div>
   );
